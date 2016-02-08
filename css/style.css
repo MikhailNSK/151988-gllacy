@@ -1,5 +1,304 @@
+
 body {
-	font: bold 16px normal roborto;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Roboto;
 	color: #fff;
-	background: #ccc;
+	
+	width: 900px;
+	margin: 0 auto;
+	
+}
+a {
+	text-decoration: underline;
+	color: white;
+}
+
+.container {
+	background: #849D8F;
+}
+
+.nav{
+	padding-left: 30px;
+	padding-top: 22px;
+	font-size: 16px;
+	float: left;
+	
+	margin-top: 0;
+	
+
+}
+.header {
+	height: 84px;
+}
+.header ul li {
+	display: inline-block;
+	padding-right: 28px;
+	margin-top: 10px; 
+	
+}
+.search {
+	width: 285px;
+	float: right;
+	
+	margin-top: 25px;
+	
+}
+.time {
+	font-size: 14px;
+	float: right;
+	margin-top: 5px;
+}
+.tel {
+	letter-spacing: 0.5px;
+	font-size: 22px;
+	padding-top: 2px;
+	float: right;
+	
+}
+.time-tel {
+	width: 190px;
+	float: right;
+	margin-top: 16px;
+	padding-right: 20px;
+	position: absolute;
+	top: 50px;
+	left: 690px;
+}
+
+.logo {
+	padding: 10px 0 0 15px;
+	display: inline;
+	float: left;
+
+}
+.lupa {
+	float: left;
+	width: 33px;
+	height: 33px;
+	background-color: #ABC1B5;
+	border-radius: 50%;
+	text-align: center;
+	margin-right: 10px;
+
+}
+.login {
+	width: 93px;
+	height: 33px;
+	background-color: #ABC1B5;
+	border-radius: 25px;
+	margin-right: 10px;
+	float: left;
+	text-decoration: none;
+}
+.cart-info {
+	width: 119px;
+	height: 33px;
+	background-color: #ABC1B5;
+	border-radius: 25px;
+	float: left;
+	text-align: center;
+}
+.present-present {
+	position: relative;
+	display: inline-block;
+	top: -21px
+}
+.present-one{
+	width: 420px;
+	height: 229px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	background: url('../img/malina.png') no-repeat;
+	margin-left:20px;
+	margin-left: 20px;
+
+}
+.present-two{
+	width: 420px;
+	height: 229px;
+	float: right;
+	background: url('../img/chocolate.png') no-repeat;
+}
+.container {
+	width: 900px;
+	background-image:  url("../img/podsvetka.png");
+	background-repeat: no-repeat;
+	position: relative;
+}
+.fig {
+	text-align: center;
+}
+.info {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+.info-title {
+	font-size: 60px;
+	position: absolute;
+	top: 354px;
+	left: 127px;
+	line-height: 1;
+}
+.button-two {
+	width: 280px;
+
+	background: #EC573B;
+	padding: 15px 0px;
+	font-size: 30px;
+	border-radius: 40px;
+	text-decoration: none;
+	position: absolute;
+	top: 545px;
+	left: 300px;
+}
+.slider-check {
+	
+	display: inline-block;
+	position: absolute;
+	top: 553px;
+	left: -20px;
+}
+.slider-check li {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: #8CA698;
+	border-radius: 15px;
+	border: 2px solid white;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.h2 {
+	padding-left: 20px;
+	font-size: 35px;
+	padding-left: 20px;
+	position: relative;
+	top: -14px;
+}
+.p-description {
+	font-size: 18px;
+	padding-left: 20px;
+	position: relative;
+	top: -27px;
+}
+.button2 {
+	width: 165px;
+	height: 46px;
+	background: #EC573B;
+	padding: 12px 24px ;
+	border-radius: 25px;
+	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+	top: -12px;
+	left: 234px;
+}
+.button3 {
+	width: 165px;
+	height: 46px;
+	background: #EC573B;
+	padding: 12px 24px ;
+	border-radius: 25px;
+	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+	top: -19px;
+	left: 207px;
+}
+.morozenoe-sale {
+	padding-left: 20px;
+
+}
+.sale {
+	outline: 1px solid red;
+	display: inline-block;
+	width: 202px;
+	padding-right: 15px;
+}
+.fon {
+	margin: 0 auto;
+	width: 860px;
+	height: 372px;
+	background-image: url("../img/layer0.jpg");
+	border-radius: 30px;
+	outline: 1px solid red;
+}
+
+.description-p {
+	font-size: 16px;
+	font-weight: normal;
+	width: 342px;
+	height: 70px;
+	outline: 1px solid blue;
+	margin-left: 57px;
+	padding-top: 12px;
+}
+.description-p2 {
+	font-size: 16px;
+	font-weight: normal;
+	width: 342px;
+	outline: 1px solid blue;
+	margin-left: 50px;
+	padding-top: 11px;
+}
+.information {
+	width: 400px;
+	
+	outline: 1px solid red;
+	float: left;
+	padding-left: 20px;
+	color: #323232;
+}
+section h3 {
+	font-size: 24px;
+	padding-top: 20px;
+	padding-left: 20px;
+	margin: 0;
+	color: #323232;
+	width: 692px;
+	outline: 1px solid red;
+	line-height: 1.3;
+}
+
+.icon-inform {
+	width: 47px;
+	height: 47px;
+	background-image: url("../img/morozenoe.svg");
+	display: inline-block;
+	position: absolute;
+	top: 1370px;
+	left: 40px;
+}
+.icon-inform2 {
+	width: 47px;
+	height: 47px;
+	background-image: url("../img/korowa.svg");
+	display: inline-block;
+	position: absolute;
+	top: 1370px;
+	left: 453px;
+	
+}
+.icon-inform3 {
+	width: 47px;
+	height: 47px;
+	background-image: url("../img/listik.svg");
+	display: inline-block;
+	position: absolute;
+	top: 1502px;
+	left: 40px;
+	
+}
+.icon-inform4 {
+	width: 47px;
+	height: 47px;
+	background-image: url("../img/gradusnik.svg");
+	display: inline-block;
+	position: absolute;
+	top: 1502px;
+	left: 453px;
+	
 }
