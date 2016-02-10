@@ -210,12 +210,14 @@ a {
 }
 .morozenoe-sale {
 	padding-left: 20px;
-
+	outline: 1px solid red;
+	vertical-align: top;
 }
 .sale {
 	outline: 1px solid red;
 	display: inline-block;
 	width: 202px;
+
 	padding-right: 15px;
 }
 .fon {
@@ -300,5 +302,177 @@ section h3 {
 	position: absolute;
 	top: 1502px;
 	left: 453px;
+	
+}
+.article-two {
+	outline: 2px solid red;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.klubnika {
+	width: 420px;
+	height: 220px;
+	background-image: url("../img/klubnika.jpg");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	margin-left: 20px;
+	color: black;
+	display: inline-block;
+}
+.klubnika a {
+	color: #353535;
+	font-size: 24px;
+	outline: 1px solid red;
+	
+}
+.info-blog {
+	outline: 1px solid red;
+	margin-top: 20px;
+	margin-left: 20px;
+	color: #5A5A5A;
+}
+.article-blog2 {
+	padding-left: 20px;
+}
+.rss {
+	width: 420px;
+	height: 220px;
+	background-image: url("../img/podlojka.jpg");
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	float: right;
+	margin-right: 20px;
+}
+.rss-description {
+	padding: 20px;
+	color: #5A5A5A;
+}
+.box {
+	width: 228px;
+	height: 40px;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	
+	color: #999999;
+	font-size: 16px;
+	padding-left: 5px;
+	margin-right: 7px;
+}
+.post {
+	background: #EB563B;
+	border-radius: 25px;
+	width: 127px;
+	height: 45px;
+	color: white;
+	font-size: 17px;
+
+}
+.map {
+	outline: 1px solid red;
+	position: relative;
+	
+}
+.feedback {
+	outline: 1px solid red;
+	width: 302px;
+	height: 305px;
+	background: #FDFEFE;
+	color: #343434;
+	border-radius: 20px;
+	text-align: left;
+	position: absolute;
+	top: 2015px;
+	left: 579px;
+
+}
+.adress {
+	color: #7D7D7D;
+	padding: 30px 0 0 20px;
+	font-size: 14px;
+	
+}
+.adress2 {
+	font-size: 14px;
+	padding-left: 20px;
+	margin-top: 22px;
+	outline: 1px solid red;
+	color: #7D7D7D;
+}
+.adress3 {
+	font-size: 14px;
+	color: #7D7D7D;
+	padding-left: 20px;
+	margin-top: -10px;
+	outline: 1px solid red;
+}
+.feedback-form {
+	padding:13px 39px;
+	background: #EB563B;
+	border-radius: 20px;
+	margin-top: 48px;
+	outline: 1px solid red;
+}
+
+.street {
+	padding-left: 20px;
+	font-size: 18px;
+	outline: 1px solid red;
+	margin-top: -5px;
+}
+.number {
+	padding-left: 20px;
+	margin-top: -3px;
+	outline: 1px solid red;
+}
+.footer {
+	outline: 1px solid red;
+	height: 100px;
+}
+.join {
+	outline: 1px solid red;
+	display: inline-block;
+	width: 188px;
+	
+}
+.join li {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	padding-right: 8px;
+}
+.production {
+	display: inline-block;
+	outline: 1px solid red;
+	list-style: none;
+	font-size: 13px;
+}
+.standarts {
+	display: inline-block;
+	list-style: none;
+	outline: 1px solid red;
+	font-size: 13px;
+}
+.copyright {
+	float: right;
+	outline: 1px solid red;
+	font-size: 12px;
+	height: 80px;
+}
+.htmlacademy {
+	width: 120px;
+	height: 45px;
+	background-image: url("../img/log.png");
+	background-repeat: no-repeat;
+}
+.copyright span {
+	outline: 1px solid red;
+}
+.production-bold {
+	font-size: 13px;
+	font-weight: bold;
+}
+.heart {
+	margin-right: 5px;
 	
 }
