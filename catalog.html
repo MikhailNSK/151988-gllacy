@@ -42,7 +42,7 @@
         <div class="login2">
           <a href="@" class="login"> Вход</a>
           <div class="login-form">
-            <form action="">
+            <form action="form.php">
               <input class="email" type="email" placeholder="Электронная почта">
               <input class="password" type="password" placeholder="Пароль">
               <input class="btn-login" type="button" value="Войти">
@@ -54,10 +54,10 @@
           </div>
         </div>
         <div class="cart-info"> Пусто <div class="cart-info-buy">
-          <table cellspacing="1" border="0">
+          <table>
                
-               <tr><td class="bg-table" width="57"></td><td width="225">Пломбир с апельсиновым джемом</td><td>1,5 кг x 200 руб.</td><td>300 руб.</td></tr>
-               <tr><td class="bg-table1" width="57"></td><td>Клубничный пломбир с присыпкой из белого шоколада</td><td>1,5 кг x 300 руб.</td><td>450 руб.</td></tr>
+               <tr><td class="bg-table"></td><td class="width-225">Пломбир с апельсиновым джемом</td><td>1,5 кг x 200 руб.</td><td>300 руб.</td></tr>
+               <tr><td class="bg-table1"></td><td>Клубничный пломбир с присыпкой из белого шоколада</td><td>1,5 кг x 300 руб.</td><td>450 руб.</td></tr>
 
             </table>
             <b class="itogo">Итого: 750 руб.</b>
@@ -77,7 +77,7 @@
 
 		<div class="content">
       <p class="navigation-link"><a href="">Главная</a> » <a href="@">Каталог</a> » <a href="@">Сливочное</a></p>
-				<h1 class="sliv-main">Сливочное мороженное</h1>
+				<h1 class="sliv-main">Сливочное мороженое</h1>
 				<form>
 				<div class="search-catalog">
 					<div class="population">
@@ -87,7 +87,7 @@
               </select>
           </div>
                 	<div class="search-radius">
-      			    		 <label class="font-size14">Цена: 100 руб. - 500 руб</label><br>
+      			    		 <label class="font-size14">Цена: 100 руб. &mdash; 500 руб</label><br>
                         <div class="search-radius-bg">
           			     <input class="ranger-search" type="range" min="0" max="1000" step="1" value="100" name="dayscount">
                         </div>
@@ -98,7 +98,7 @@
             					<label class="search-radio-label"><input type="radio">0%</label>
             					<label class="search-radio-label"><input type="radio">до 10%</label>
             					<label class="search-radio-label"><input type="radio">до 30%</label>
-            					<label><input type="radio">выше 30%</label>
+            					<label class="search-radio-label"><input type="radio">выше 30%</label>
                       </div>
             				</div><br>
     				<p class="search-check ">Наполнители:</p><br>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="sale part-one">
                         <img src="img/9.png" width="200" height="200" alt="1">
-                      <span class="price-hit">400</span><span class="price-r">/кг</span>
+                      <span class="price-hit">440</span><span class="price-r">/кг</span>
                       <a href=""><p class="description-info">Сливочно-ванильное с кусочками шоколада</p></a>
                       <div class="fast-view">
             <div class="fast-view2">
@@ -244,29 +244,29 @@
           </div>
           <div class="pagination">
             <ul class="page">
-            <li><a href="@"><</a></li>
+            <li><a href="@" class="list-start"></a></li>
             <li><a class="now" href="@">1</a></li>
             <li><a href="@">2</a></li>
             <li><a href="@">3</a></li>
             <li><a href="@">4</a></li>
             <li><a href="@">5</a></li>
-            <li><a href="@">></a></li>
+            <li><a href="@" class="list-finish"></a></li>
           </ul>
           </div>
           <div class="razdelitel"></div>
   <div class="footer">
       <ul class="join">
-        <a href=""><li class="twitter"></li></a><!--twitter-->
-        <a href=""><li class="instagram"></li></a>
-        <a href=""><li class="facebook"></li></a><!--facebook-->
-        <a href=""><li class="vkontakte"></li></a><!--vkontakte-->
+        <li class="twitter soc1"><a href=""></a></li><!--twitter-->
+        <li class="instagram soc2"><a href=""></a></li>
+        <li class="facebook soc3"><a href=""></a></li><!--facebook-->
+        <li class="vkontakte soc4"><a href=""></a></li><!--vkontakte-->
       </ul>
       <ul class="production">
         <li class="production-bold"><a href="@">Для поставщиков</a></li>
         <li><a href="@">О производсте</a></li>
       </ul>
       <ul class="standarts">
-        <li><a href="@">Нащи документы</a></li>
+        <li class="document-padding"><a href="@">Нащи документы</a></li>
         <li><a href="@">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
