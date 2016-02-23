@@ -148,7 +148,7 @@ a {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	text-align: center;
-	
+	position: relative;
 }
 
 .lens:hover {
@@ -182,21 +182,28 @@ a {
 	border-radius: 5px;
 	z-index: 9999;
 	display: none;
-
 	position: absolute;
-	top: 62px;
-	left: 366px;
+	top: 39px;
+	left: -247px;
 }
 
 .input-search {
-	
+	color: #333;
 	width: 248px;
 	height: 39px;
-	font-size: 14px;
-	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
 	border:1px solid #D3D3D2;
+	outline: none;
 	margin-top: 16px; 
 	padding-left: 15px;
+}
+.input-search:hover {
+	box-shadow: 0px 0px 0px 1px #C7C6C5;
+}
+.input-search:active, .input-search:focus {
+	box-shadow: 0px 0px 0px 1px #8FBDEC;
 }
 
 .lens:hover .form-search {
@@ -275,8 +282,23 @@ a {
 	position: relative;
 	left: 5px;
 	top: 7px;
-	
 }
+
+.login:hover:before {
+	content: "";
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 0 13px 0 0;
+	background: url("../img/cart-login.png") no-repeat;
+
+	position: relative;
+	left: 5px;
+	top: 7px;
+}
+
+
 .login:after {
 	content: "";
 	display: block;
@@ -301,9 +323,12 @@ a {
 	background: #F8F7F4;
 
 	position: absolute;
-	top: 62px;
-	left: 480px;
+	top: 39px;
+	left: -137px;
 	
+}
+.login2 {
+	position: relative;
 }
 .login2:hover .login-form {
 	display: block;
@@ -316,13 +341,24 @@ a {
 .email, .password {
 	width: 225px;
 	height: 37px;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: bold;
 	border-radius: 3px;
 	border:1px solid #D3D3D2;
-
+	outline: none;
+	color: #333;
 	margin-left: 15px;
 	padding-left: 15px;
 }
+
+.email:hover, .password:hover {
+	box-shadow: 0px 0px 0px 1px #C7C6C5;
+}
+.email:focus, .password:focus {
+	box-shadow: 0px 0px 0px 1px #8FBDEC;
+}
+
+
 .btn-login {
 	float: left;
 	border-radius: 25px;
@@ -381,10 +417,12 @@ a {
 	float: left;
 	width: 109px;
 	height: 33px;
+	position: relative;
 	text-align: center;
 	line-height: 33px;
 	font-size: 14px;
 	font-weight: 500;
+	cursor: pointer;
 	border-radius: 25px;
 	padding-right: 9px;
 	background-color: #ABC1B5;
@@ -392,6 +430,7 @@ a {
     background: -webkit-linear-gradient(top, #A5BBAF 0%, #A9BFB3 100%);
 	background:         linear-gradient(to bottom, #A5BBAF 0%, #A9BFB3 100%);
 }
+
 .cart-info:before {
 	content: "";
 	float: left;
@@ -399,17 +438,27 @@ a {
 	width: 20px;
 	height: 20px;
 	margin: 0 0px 0 0;
-	background: url("../img/korzina.svg") no-repeat;
+	background: url("../img/basket.svg") no-repeat;
 
 	position: relative;
 	left: 17px;
 	top: 7px;
 }
-.cart-info:hover {
-	cursor: pointer;
-	color: #474746;
-	background: #F8F7F4;
+
+.cart-info:hover:before {
+	content: "";
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	color: black;
+	margin: 0 13px 0 0;
+	background: url("../img/cart-info-buy.png") no-repeat;
+	position: relative;
+	left: 15px;
+	top: 7px;
 }
+
 .cart-info:after {
 	content: "";
 	display: block;
@@ -426,11 +475,9 @@ a {
 	background: url("../img/raz10.png") no-repeat;
 	background-position: 50% 136px;
 	background-color: #F8F7F4;
-	
-
 	position: absolute;
-	top: 61px;
-	left: 342px;
+	top: 39px;
+	left: -419px;
 }   
 .cart-info:hover .cart-info-buy {
 	display: block;
@@ -462,7 +509,7 @@ a {
   	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 
   	position: relative;
-	top: 66px;
+	top: 62px;
 	left: 241px;
 }
 .decor:hover {
@@ -480,8 +527,8 @@ a {
 }
 
 .ice-ice {
-	margin-top: 10px;
-	padding-bottom: 15px;
+	padding-top: 15px;
+	display: block;
 	line-height: 15px;
 	border-spacing: 0;
 	border: 0;
@@ -500,8 +547,7 @@ td {
 	padding: 0px 8px 0px 10px;
 	font-size: 13px;
 	text-align: left;
-	border-top: 5px solid #F8F7F4;
-	border-bottom: 5px solid #F8F7F4;
+	
 }
 
 td:last-child {
@@ -510,14 +556,14 @@ td:last-child {
 
 .bg-table {
 	width: 57px;
-	background: url("../img/korzina1.png") no-repeat 96% 50%,
-				url("../img/korzina2.png") no-repeat 22% 50%;
+	background: url("../img/basket1.png") no-repeat 96% 50%,
+				url("../img/basket2.png") no-repeat 22% 50%;
 }
 
 .bg-table1 {
 	width: 57px;
-	background: url("../img/korzina3.png") no-repeat 96% 50%,
-				url("../img/korzina2.png") no-repeat 22% 50%;
+	background: url("../img/basket3.png") no-repeat 96% 50%,
+				url("../img/basket2.png") no-repeat 22% 50%;
 }
 
 .cross {
@@ -714,7 +760,7 @@ td:last-child {
 	margin-right: 20px;
 	margin-left: 20px;
 	
-	background: url('../img/malina.png');
+	background: url('../img/raspberries.png');
 	background-color: #8A1437;
 	border-radius: 15px;
 	margin-left:20px;
@@ -902,13 +948,7 @@ td:last-child {
 	transition: all 1s ease;
 	padding-bottom: 20px;
 }
-.sale:hover {
-	height: 356px;
-	background: #A7B8AD;
-	border-radius: 5px;
-	
-	transition: all 1s ease;
-}
+
 .sale a:hover {
 	text-decoration: none;
 }
@@ -923,7 +963,7 @@ td:last-child {
 	font-size: 15px;
 	font-weight: bold;
 	position: absolute;
-	top: 305px;
+	top: 296px;
 	left: 10px;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     background: #f26843;
@@ -931,7 +971,7 @@ td:last-child {
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  	
+  	z-index: 9010;
 }
 .fast:hover {
   background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -953,6 +993,51 @@ td:last-child {
 .sale:hover .fast-view2{
 	display: block;
 }
+
+
+
+
+.sale:hover:before {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  bottom: -74px;
+  left: 0px;
+  z-index: 9010;
+  display: block;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+  content: "";
+  opacity: 0.3;
+  height: 360px;
+}
+
+.item:hover:before {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fast-view2 a {
 	text-decoration: none;
 }
@@ -1163,11 +1248,21 @@ section h3 {
 	border-radius: 5px;
 	margin-left: 24px;
 	border: 1px solid #D3D3D2;
+	outline: none;
 	color: #999999;
 	font-size: 16px;
 	padding-left: 10px;
 	margin-right: 7px;
 }
+
+
+.box:hover {
+	box-shadow: 0px 0px 0px 1px #C7C6C5;
+}
+.box:focus {
+	box-shadow: 0px 0px 0px 1px #8FBDEC;
+}
+
 .post {
 	background: #EB563B;
 	border-radius: 25px;
@@ -1440,6 +1535,10 @@ section h3 {
 	font-size: 16px;
 	margin-top: 5px;
 	outline: none;
+}
+.option-population:hover {
+	color: #363636;
+	background: #ffffff;
 }
 
 .search-checkbox {
@@ -1740,8 +1839,8 @@ section h3 {
 
 .modal-content {
   position: absolute;
-  top: 1940px;
-  left: 950px;
+  top: -390px;
+  left: 898px;
   z-index: 9010;
   display: none;
   width: 300px;
@@ -1760,6 +1859,11 @@ section h3 {
 	color: #343434;
 	
 }
+
+.modal-content-position {
+	position: relative;
+}
+
 
 .modal-content-show {
   display: block;
@@ -1839,24 +1943,26 @@ section h3 {
   padding: 8px 14px;
   padding-right: 40px;
 
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 24px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
-  text-transform: uppercase;
+  
 
   background-color: #FFFFFF;
   border: 1px solid #D3D3D2;
   outline: none;
 }
 .feedback-form-post input:hover {
-  border: 2px solid #C7C6C5;
   
+  box-shadow: 0px 0px 0px 1px #C7C6C5;
  
 }
 
 .feedback-form-post input:focus {
-  border: 2px solid #8FBDEC;
+	box-shadow: 0px 0px 0px 1px #8FBDEC;
+  
   
  
 }
@@ -1865,6 +1971,7 @@ section h3 {
   background-image: url("../img/user.png");
   background-repeat: no-repeat;
   background-position: 257px center;
+  border-radius: 5px;
   
 }
 
@@ -1872,6 +1979,7 @@ section h3 {
   background-image: url("../img/telephone.png");
   background-repeat: no-repeat;
   background-position: 257px center;
+  border-radius: 5px;
  
 }
 
