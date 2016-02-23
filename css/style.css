@@ -171,8 +171,9 @@ a {
 	height: 10px;
 	
 	position: absolute;
-	top: 52px;
-	right: 250px;
+	top: 34px;
+	right: -3px;
+	z-index: 9920;
 }
 .form-search {
 	padding-top: 5px;
